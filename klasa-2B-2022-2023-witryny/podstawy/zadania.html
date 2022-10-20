@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            zadanie 1
+            Napisz funkcję,która wyświetli liczby od 0 do 10.
+
+            zadanie 2
+            Napisz funkcję,która przyjmie liczbe i wyświetli
+            informację czy jest ona parzysta czy nieparzysta
+
+            zadanie 3 
+            Napisz funkcję,która przyjmnie dwie wartośći
+            i wyświetli:
+            * informacje czy wartości sa równe czy nie
+            * informacje czy wartosci są indentyczne czy nie
+            
+            zadanie 4
+            Napisz funkcje,która przyjmie liczbę i wyswietli
+            nazwę dnia tygodnia.
+
+            zadanie 5
+            Napisz funkcję, która wyswietli tabliczke mnozenia od
+            "0*0=0" do "10*10=100".
+
+            zadanie 6 
+            Napisz funkcję , która pobierze liczbę i wyswietli
+            ją w systemie binarnym
+        */
+
+
+        //zadanie 1
+        document.writeln("zadanie 1") 
+        document.writeln("<br/>")
+
+        function Funkcjaliczby()
+        {
+            for ( i = 0 ; i < 10; i++)
+            {
+                document.writeln(i);
+            }
+            document.writeln(i);
+        }
+        Funkcjaliczby();
+        //koniec zadania 1
+
+        document.writeln("<br/>")
+        document.writeln("<br/>")
+
+
+        //zadanie 2
+        document.writeln("zadanie 2")
+        document.writeln("<br/>")
+
+        function CzyToJestParzyste(liczba)
+        {
+            if(liczba%2)
+            {   
+                document.writeln("liczba nie jest parzysta")
+            }
+            else
+            {
+                document.writeln("liczba jest parzysta")
+            }
+        }
+        CzyToJestParzyste(6)
+        //koniec zadanie 2
+
+        document.writeln("<br/>")
+        document.writeln("<br/>")
+
+        //zadanie 3
+        document.writeln("zadanie 3")
+        document.writeln("<br/>")
+
+        function Dwie_liczby(Pierwszawartosc, Drugawartosc)
+        {
+            if(Pierwszawartosc==Drugawartosc)
+            {
+                document.writeln("Funkcje są równe / identyczne");
+            }
+            else
+            {
+                document.writeln("Funkcje NIe są równe / identyczne");
+            }
+        }
+        Dwie_liczby(10,10); //tutaj funkcja przyjeła 2 wartosci
+        //koniec zadania 3
+
+        document.writeln("<br/>")
+        document.writeln("<br/>")
+
+        //zadanie 4
+        document.writeln("zadanie 4")
+        document.writeln("<br/>")
+
+        function DniTygonia(dzien)
+        {
+            switch(dzien)
+            {
+                case 1:
+                    document.writeln("Poniedziałek");
+                    break;
+                case 2:
+                    document.writeln("Wtorek");
+                    break;
+                case 3:
+                    document.writeln("Środa");
+                    break;
+                case 4:
+                    document.writeln("Czwartek");
+                    break;
+                case 5:
+                    document.writeln("Piatek");
+                    break;
+                case 6:
+                    document.writeln("Sobota");
+                    break;
+                case 0:
+                case 7:
+                    document.writeln("Niedziela");
+                    break;
+                default:
+                    document.writeln("zły numer");
+                
+            }
+        }
+        DniTygonia(0)
+        //koniec zadanie 4
+    
+        document.writeln("<br/>")
+        document.writeln("<br/>")
+
+        //zadanie 5
+    
+    </script>
+</body>
+</html>
